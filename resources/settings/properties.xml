@@ -1,0 +1,14 @@
+<properties>
+    
+    <property id="ActiveColor" type="number">0x00FF00</property>
+    <property id="SittingColor" type="number">0x00AAFF</property>
+    <property id="SittingColor2" type="number">0xAAAAAA</property>
+    <property id="SittingColor3" type="number">0xFFAA00</property>
+    <property id="SittingColor4" type="number">0xAA00FF</property>
+    <property id="IdleColor" type="number">0xFF0000</property>
+    <property id="ReqStepsPerMinute" type="number">65</property>
+    <property id="ReqStepsPerTwoMinutes" type="number">100</property>
+    <property id="ShowPercents" type="boolean">true</property>
+    <property id="ShowDetails" type="boolean">true</property>
+
+</properties>

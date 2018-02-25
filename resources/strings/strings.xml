@@ -7,9 +7,10 @@
     <string id="SittingColor2Title">Sitting Color 2</string>
     <string id="SittingColor3Title">Sitting Color 3</string>
     <string id="SittingColor4Title">Sitting Color 4</string>
-    <string id="IdleColorTitle">Idle Color</string>
+    <string id="IdleColorTitle">Inactive Color</string>
     <string id="ShowPercentsTitle">Show percents (battery + step goal)</string>
     <string id="ShowDetailsTitle">Show details (distance + steps)</string>
+    <string id="ShowDescriptionTitle">Show description (battery + step goal)</string>
     <string id="ReqStepsPerMinuteTitle">Required steps per minute (30-150)</string>
     <string id="ReqStepsPerTwoMinutesTitle">Required steps per two minutes (50-200)</string>
 

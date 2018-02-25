@@ -10,5 +10,6 @@
     <property id="ReqStepsPerTwoMinutes" type="number">100</property>
     <property id="ShowPercents" type="boolean">true</property>
     <property id="ShowDetails" type="boolean">true</property>
+    <property id="ShowDescription" type="boolean">false</property>
 
 </properties>

@@ -1,5 +1,9 @@
 <settings>
 
+    <setting propertyKey="@Properties.ShowDescription" title="@Strings.ShowDescriptionTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    
     <setting propertyKey="@Properties.ShowPercents" title="@Strings.ShowPercentsTitle">
         <settingConfig type="boolean" />
     </setting>

@@ -70,9 +70,15 @@ class ActiveDotsView extends Ui.WatchFace {
         
         //Show percents
         if(Application.getApp().getProperty("ShowPercents") == true) {
+        	//Add description if enabled (v 1.1)
+        	if(Application.getApp().getProperty("ShowDescription") == true) {
+        		batStr = "B: " + batStr; 
+        		stepPercentStr = "S: " + stepPercentStr; 
+           	}        
         	dc.drawText(dc.getWidth()/4+10, dc.getHeight()-40, Gfx.FONT_SMALL, batStr, Gfx.TEXT_JUSTIFY_CENTER);
         	dc.drawText(dc.getWidth()/4*3-10, dc.getHeight()-40, Gfx.FONT_SMALL, stepPercentStr, Gfx.TEXT_JUSTIFY_CENTER);
-        }        
+        }       
+         
         //Show details
         if(Application.getApp().getProperty("ShowDetails") == true) {
         	dc.drawText(dc.getWidth()/4+10, dc.getHeight()-20, Gfx.FONT_SMALL, distanceStr+"km", Gfx.TEXT_JUSTIFY_CENTER);
@@ -182,7 +188,7 @@ class ActiveDotsView extends Ui.WatchFace {
         	var todayMom = new Time.Moment(Time.now().value());   
     		diff = todayMom.subtract(activityTimerReachedZeroMom); 
         }        
-        if (diff != 0 and diff.value() >= 5*60 and activityInfo.moveBarLevel == 0){ //After 5 minutes should be fine (previously 3600) 
+        if (diff != 0 and diff.value() >= 3600 and activityInfo.moveBarLevel == 0){ 
         	//Watch is in sleep mode - no need to draw points - return
         	//Note: activityInfo.isSleepMode is not working on a real device        
         	dc.drawText(dc.getWidth()/2+5, dc.getHeight()/2-40, gchFont, Lang.format("$1$", [clockTime.min.format("%02d")]), Gfx.TEXT_JUSTIFY_LEFT); 
